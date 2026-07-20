@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { QRCodeCanvas } from 'qrcode.react';
+import QRCode from '@/components/QRCode';
 
 export default function Home() {
   
@@ -24,9 +24,7 @@ export default function Home() {
           focus:outline-none"
         />
       </label>
-      <div>
-        <QRCodeCanvas value={text} size={200}/>
-      </div>
+      <QRCode value={text}/>  
     </main>
   )
 }
