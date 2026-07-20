@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import QRCode from '@/components/QRCode';
+// import QRCode from '@/components/QRCode';
+import BARCode from '@/components/BARCode'
 
 export default function Home() {
   
@@ -24,7 +25,7 @@ export default function Home() {
           focus:outline-none"
         />
       </label>
-      <QRCode value={text}/>  
+      <BARCode value={text}/>  
     </main>
   )
 }
